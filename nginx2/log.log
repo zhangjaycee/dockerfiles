@@ -1,0 +1,113 @@
+111
+Mon Nov 23 09:49:11 2015 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Mon Nov 23 09:49:11 2015] ***
+Mon Nov 23 09:49:11 2015 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Mon Nov 23 09:49:11 2015 - os: Linux-3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014
+Mon Nov 23 09:49:11 2015 - nodename: 497c20a9d535
+Mon Nov 23 09:49:11 2015 - machine: x86_64
+Mon Nov 23 09:49:11 2015 - clock source: unix
+Mon Nov 23 09:49:11 2015 - pcre jit disabled
+Mon Nov 23 09:49:11 2015 - detected number of CPU cores: 1
+Mon Nov 23 09:49:11 2015 - current working directory: /wechat_galileo
+Mon Nov 23 09:49:11 2015 - detected binary path: /usr/bin/uwsgi-core
+Mon Nov 23 09:49:11 2015 - uWSGI running as root, you can use --uid/--gid/--chroot options
+Mon Nov 23 09:49:11 2015 - *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Mon Nov 23 09:49:11 2015 - your processes number limit is 524288
+Mon Nov 23 09:49:11 2015 - limiting address space of processes...
+Mon Nov 23 09:49:11 2015 - your process address space limit is 536870912 bytes (512 MB)
+Mon Nov 23 09:49:11 2015 - your memory page size is 4096 bytes
+Mon Nov 23 09:49:11 2015 - detected max file descriptor number: 524288
+Mon Nov 23 09:49:11 2015 - lock engine: pthread robust mutexes
+Mon Nov 23 09:49:11 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Mon Nov 23 09:49:11 2015 - uwsgi socket 0 bound to UNIX address /tmp/galileo.socket fd 3
+Mon Nov 23 09:49:11 2015 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Mon Nov 23 09:49:12 2015 - Python main interpreter initialized at 0xb2fca0
+Mon Nov 23 09:49:12 2015 - python threads support enabled
+Mon Nov 23 09:49:12 2015 - your server socket listen backlog is limited to 100 connections
+Mon Nov 23 09:49:12 2015 - your mercy for graceful operations on workers is 60 seconds
+Mon Nov 23 09:49:12 2015 - mapped 161968 bytes (158 KB) for 1 cores
+Mon Nov 23 09:49:12 2015 - *** Operational MODE: single process ***
+Mon Nov 23 09:49:12 2015 - added /root/wechat_galileo/galileo to pythonpath.
+Traceback (most recent call last):
+  File "./wechat/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+Mon Nov 23 09:49:12 2015 - unable to load app 0 (mountpoint='') (callable not found or import error)
+Mon Nov 23 09:49:12 2015 - *** no app loaded. going in full dynamic mode ***
+Mon Nov 23 09:49:12 2015 - *** uWSGI is running in multiple interpreter mode ***
+Mon Nov 23 09:49:12 2015 - spawned uWSGI master process (pid: 14)
+Mon Nov 23 09:49:12 2015 - spawned uWSGI worker 1 (pid: 26, cores: 1)
+Mon Nov 23 09:49:23 2015 - --- no python application found, check your startup logs for errors ---
+[pid: 26|app: -1|req: -1/1] 123.138.79.11 () {48 vars in 990 bytes} [Mon Nov 23 09:49:23 2015] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 1 headers in 57 bytes (1 switches on core 0)
+Mon Nov 23 09:49:23 2015 - --- no python application found, check your startup logs for errors ---
+[pid: 26|app: -1|req: -1/2] 123.138.79.11 () {46 vars in 911 bytes} [Mon Nov 23 09:49:23 2015] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 1 headers in 57 bytes (1 switches on core 0)
+Mon Nov 23 09:56:53 2015 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Mon Nov 23 09:56:53 2015] ***
+Mon Nov 23 09:56:53 2015 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Mon Nov 23 09:56:53 2015 - os: Linux-3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014
+Mon Nov 23 09:56:53 2015 - nodename: 35868c15fc45
+Mon Nov 23 09:56:53 2015 - machine: x86_64
+Mon Nov 23 09:56:53 2015 - clock source: unix
+Mon Nov 23 09:56:53 2015 - pcre jit disabled
+Mon Nov 23 09:56:53 2015 - detected number of CPU cores: 1
+Mon Nov 23 09:56:53 2015 - current working directory: /wechat_galileo
+Mon Nov 23 09:56:53 2015 - detected binary path: /usr/bin/uwsgi-core
+Mon Nov 23 09:56:53 2015 - uWSGI running as root, you can use --uid/--gid/--chroot options
+Mon Nov 23 09:56:53 2015 - *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Mon Nov 23 09:56:53 2015 - your processes number limit is 524288
+Mon Nov 23 09:56:53 2015 - limiting address space of processes...
+Mon Nov 23 09:56:53 2015 - your process address space limit is 536870912 bytes (512 MB)
+Mon Nov 23 09:56:53 2015 - your memory page size is 4096 bytes
+Mon Nov 23 09:56:53 2015 - detected max file descriptor number: 524288
+Mon Nov 23 09:56:53 2015 - lock engine: pthread robust mutexes
+Mon Nov 23 09:56:53 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Mon Nov 23 09:56:53 2015 - uwsgi socket 0 bound to UNIX address /tmp/galileo.socket fd 3
+Mon Nov 23 09:56:53 2015 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Mon Nov 23 09:56:53 2015 - Python main interpreter initialized at 0x23ecca0
+Mon Nov 23 09:56:53 2015 - python threads support enabled
+Mon Nov 23 09:56:53 2015 - your server socket listen backlog is limited to 100 connections
+Mon Nov 23 09:56:53 2015 - your mercy for graceful operations on workers is 60 seconds
+Mon Nov 23 09:56:53 2015 - mapped 161968 bytes (158 KB) for 1 cores
+Mon Nov 23 09:56:53 2015 - *** Operational MODE: single process ***
+Mon Nov 23 09:56:53 2015 - added /root/wechat_galileo/galileo to pythonpath.
+Mon Nov 23 09:56:54 2015 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x23ecca0 pid: 9 (default app)
+Mon Nov 23 09:56:54 2015 - *** uWSGI is running in multiple interpreter mode ***
+Mon Nov 23 09:56:54 2015 - spawned uWSGI master process (pid: 9)
+Mon Nov 23 09:56:54 2015 - spawned uWSGI worker 1 (pid: 24, cores: 1)
+[pid: 24|app: 0|req: 1/1] 123.138.79.11 () {46 vars in 911 bytes} [Mon Nov 23 09:57:04 2015] GET /favicon.ico => generated 2036 bytes in 35 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 24|app: 0|req: 2/2] 140.207.54.79 () {40 vars in 676 bytes} [Mon Nov 23 09:57:09 2015] GET /?signature=d4e8b654b46f174138c85d80c0c84b6ae8ea04dd&echostr=6316254476904166397&timestamp=1448272629&nonce=41190105 => generated 83721 bytes in 139 msecs (HTTP/1.0 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 24|app: 0|req: 3/3] 140.207.54.77 () {40 vars in 680 bytes} [Mon Nov 23 09:57:12 2015] GET /?signature=037ee4913a86ff7bb8cca7940a894b731cc26680&echostr=3135366813896343290&timestamp=1448272632&nonce=1188454805 => generated 83737 bytes in 115 msecs (HTTP/1.0 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 24|app: 0|req: 4/4] 101.226.103.62 () {40 vars in 681 bytes} [Mon Nov 23 09:57:34 2015] GET /?signature=9947c400a85fc92d7daabff47a0a39644ba90756&echostr=1486074976686046126&timestamp=1448272654&nonce=1447952171 => generated 83739 bytes in 125 msecs (HTTP/1.0 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 24|app: 0|req: 5/5] 123.138.79.11 () {46 vars in 959 bytes} [Mon Nov 23 09:58:47 2015] GET / => generated 84108 bytes in 118 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+Mon Nov 23 10:01:14 2015 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Mon Nov 23 10:01:14 2015] ***
+Mon Nov 23 10:01:14 2015 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Mon Nov 23 10:01:14 2015 - os: Linux-3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014
+Mon Nov 23 10:01:14 2015 - nodename: ad7fd6f8fbd4
+Mon Nov 23 10:01:14 2015 - machine: x86_64
+Mon Nov 23 10:01:14 2015 - clock source: unix
+Mon Nov 23 10:01:14 2015 - pcre jit disabled
+Mon Nov 23 10:01:14 2015 - detected number of CPU cores: 1
+Mon Nov 23 10:01:14 2015 - current working directory: /wechat_galileo
+Mon Nov 23 10:01:14 2015 - detected binary path: /usr/bin/uwsgi-core
+Mon Nov 23 10:01:14 2015 - uWSGI running as root, you can use --uid/--gid/--chroot options
+Mon Nov 23 10:01:14 2015 - *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Mon Nov 23 10:01:14 2015 - your processes number limit is 524288
+Mon Nov 23 10:01:14 2015 - limiting address space of processes...
+Mon Nov 23 10:01:14 2015 - your process address space limit is 536870912 bytes (512 MB)
+Mon Nov 23 10:01:14 2015 - your memory page size is 4096 bytes
+Mon Nov 23 10:01:14 2015 - detected max file descriptor number: 524288
+Mon Nov 23 10:01:14 2015 - lock engine: pthread robust mutexes
+Mon Nov 23 10:01:14 2015 - thunder lock: disabled (you can enable it with --thunder-lock)
+Mon Nov 23 10:01:14 2015 - uwsgi socket 0 bound to UNIX address /tmp/galileo.socket fd 3
+Mon Nov 23 10:01:14 2015 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Mon Nov 23 10:01:14 2015 - Python main interpreter initialized at 0x1a5aca0
+Mon Nov 23 10:01:14 2015 - python threads support enabled
+Mon Nov 23 10:01:14 2015 - your server socket listen backlog is limited to 100 connections
+Mon Nov 23 10:01:14 2015 - your mercy for graceful operations on workers is 60 seconds
+Mon Nov 23 10:01:14 2015 - mapped 161968 bytes (158 KB) for 1 cores
+Mon Nov 23 10:01:14 2015 - *** Operational MODE: single process ***
+Mon Nov 23 10:01:14 2015 - added /root/wechat_galileo/galileo to pythonpath.
+Mon Nov 23 10:01:14 2015 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1a5aca0 pid: 8 (default app)
+Mon Nov 23 10:01:14 2015 - *** uWSGI is running in multiple interpreter mode ***
+Mon Nov 23 10:01:14 2015 - spawned uWSGI master process (pid: 8)
+Mon Nov 23 10:01:14 2015 - spawned uWSGI worker 1 (pid: 23, cores: 1)
+[pid: 23|app: 0|req: 1/1] 123.138.79.11 () {48 vars in 990 bytes} [Mon Nov 23 10:01:20 2015] GET / => generated 4 bytes in 91 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 23|app: 0|req: 2/2] 140.207.54.77 () {40 vars in 680 bytes} [Mon Nov 23 10:01:25 2015] GET /?signature=cec35c58dc576a0e40ab320c1960ebf1965ac50b&echostr=4890779819472780287&timestamp=1448272883&nonce=1565110348 => generated 19 bytes in 2 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
