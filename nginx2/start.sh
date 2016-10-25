@@ -10,8 +10,11 @@ docker run -d -p 80:80 \
 -v /root/docker_imgs/nginx2/log.log:/var/log/uwsgi.log \
 -v /root/docker_imgs/nginx2/uwsgi.conf:/etc/nginx/sites-enabled/uwsgi.conf \
 -v /root/docker_imgs/nginx2/blog.conf:/etc/nginx/sites-enabled/blog.conf \
--v /root/wechat_galileo:/wechat_galileo \
---volumes-from $1 --name $2 jczhang/nginx2 \
+-v /root/wechat_galileo:/root/wechat_galileo \
+-v /root/docker_imgs/nginx2/nginx.log:/var/log/nginx/access.log \
+-v /root/docker_imgs/nginx2/nginx_err.log:/var/log/nginx/error.log \
+--volumes-from $1 \
+--name $2 jczhang/nginx2 \
 /doit.sh
 #docker run -d -p 80:80 -v /root/docker_imgs/nginx2/blog.conf:/etc/nginx/site-enabled/blog.conf  --volumes-from $1 --name $2 jczhang/nginx2 nginx
 
